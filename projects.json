@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "title": "Proyecto de ejemplo",
+    "description": "Descripción breve del proyecto realizado para el cliente.",
+    "image": "https://placehold.co/600x400/7C3AED/white?text=Zencode",
+    "tags": ["Angular", "Node.js"],
+    "url": ""
+  }
+]
