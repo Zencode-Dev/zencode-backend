@@ -8,7 +8,11 @@ const projectsRoutes = require('./routes/projects');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(cors({ origin: ['http://localhost:4200', 'http://192.168.1.85:4200'] }));
+const allowedOrigins = process.env.CORS_ORIGIN
+  ? process.env.CORS_ORIGIN.split(',')
+  : ['http://localhost:4200', 'http://192.168.1.85:4200'];
+
+app.use(cors({ origin: allowedOrigins }));
 app.use(express.json());
 
 app.use('/api/contact', contactRoutes);
