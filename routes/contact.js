@@ -1,5 +1,5 @@
 const express = require('express');
-const nodemailer = require('nodemailer');
+const { Resend } = require('resend');
 const router = express.Router();
 
 router.post('/', async (req, res) => {
@@ -9,17 +9,11 @@ router.post('/', async (req, res) => {
     return res.status(400).json({ error: 'Todos los campos son requeridos.' });
   }
 
-  const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
-    },
-  });
+  const resend = new Resend(process.env.RESEND_API_KEY);
 
   try {
-    await transporter.sendMail({
-      from: `"${name}" <${process.env.EMAIL_USER}>`,
+    await resend.emails.send({
+      from: 'Zencode <onboarding@resend.dev>',
       to: process.env.EMAIL_TO,
       subject: `Nuevo contacto desde Zencode - ${name}`,
       html: `
