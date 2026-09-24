@@ -23,7 +23,7 @@
     "description": "Bots inteligentes para WhatsApp, potenciados con IA y armados a medida según lo que tu negocio necesite: asistente personal, atención de delivery, ventas o soporte al cliente. Automatizá las conversaciones que hoy te quitan tiempo y dejá que la IA responda, tome pedidos y cierre ventas las 24 horas. Registrate y probalo gratis por 14 días, sin tarjeta.",
     "image": "/projects/wapia.png",
     "tags": ["Node.js", "WhatsApp API", "IA / Claude"],
-    "url": "",
+    "url": "https://wapia.com.ar",
     "status": "completed"
   },
   {
@@ -32,14 +32,14 @@
     "description": "Sitio web desarrollado para Rufina Estética, centro de belleza, cosmética y cuidado personal en Armstrong, Santa Fe. Una web pensada para mostrar sus servicios —maquillaje, depilación tradicional, limpieza facial y masajes relajantes— y facilitar el contacto directo por WhatsApp, con una presentación prolija que refleja la identidad de la marca y ayuda a captar y fidelizar clientas.",
     "image": "/projects/rufina.png",
     "tags": ["Angular"],
-    "url": "",
+    "url": "https://rufinaestetica.com.ar",
     "status": "in-progress"
   },
   {
     "id": 5,
     "title": "Zshop",
     "description": "Tu tienda online, hecha a medida y sin plantillas genéricas. Diseñamos y desarrollamos un e-commerce propio para cada negocio, adaptado a tu marca, tus productos y la forma en que querés vender.",
-    "image": "https://placehold.co/600x400/2E2B3E/white?text=Zshop",
+    "image": "/projects/zshop.png",
     "tags": ["Angular", "Node.js"],
     "url": "",
     "status": "in-progress"
